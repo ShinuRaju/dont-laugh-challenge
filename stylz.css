@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #00416a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffe000,
+    #799f0c,
+    #00416a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffe000,
+    #799f0c,
+    #00416a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .joke {
+  border: 2px solid rgb(240, 237, 255);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.container h1 {
+  color: rgba(238, 241, 255, 1) !important;
+  text-align: center;
+}
+
+.container .joke p {
+  font-size: 3rem !important;
+  text-align: center;
+  margin: 2rem 1rem;
+  color: rgb(238, 241, 255) !important;
+}
+
+.container .joke input {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+
+  background-color: white;
+  opacity: 0.8;
+  transition: opacity 500ms ease;
+}
+.container .joke input:hover {
+  opacity: 1;
+}
